@@ -12,6 +12,10 @@
     margin-bottom: 30px;
   }
   
+  h1 {
+    text-align: left
+  }
+
   h1, h2, h3 {
     color: #ff9800;
   }

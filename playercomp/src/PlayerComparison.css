@@ -34,8 +34,7 @@ body {
   max-width: 600px; /* Prevents it from getting too large */
   height: auto; /* Adjusts height dynamically */
   padding: 10px;
-  background-color: #1e1e1e;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  background-color: #121212;
   overflow: hidden; /* Prevents content from overflowing */
 }
 
