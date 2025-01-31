@@ -56,7 +56,7 @@ const RadarChart = ({ player1Data, player2Data }) => {
     <Plot
       data={finalData}
       layout={{
-        polar: { radialaxis: { visible: true, range: [0, 1] } }, // Fixed axis range
+        polar: { radialaxis: { showticklabels: false, visible: true, range: [0, 1] } }, // Fixed axis range
         title: plotData.length > 0 ? "Player Comparison Radar Chart" : "Select Players to Compare",
         showlegend: plotData.length > 0, // Show legend only if players are present
         autosize: true,
