@@ -71,6 +71,20 @@ const About = () => {
         <p>
           By combining these techniques, the radar chart ensures that <strong>dominant players stand out</strong>, while players who are <strong>above average in a category</strong> are also recognized. This hybrid approach <strong>strikes a balance between fairness and differentiation</strong>, making player comparisons both intuitive and insightful.
         </p>
+
+        <p>
+          The normalized metric is calculated using the formula:
+        </p>
+        <p>
+          <strong>Normalized(metric) =</strong> α × Percentile(metric) + (1 - α) × Min-Max(metric)
+        </p>
+        <p>
+          Where: <br />
+          α (alpha) = 0.65 <br />
+          Percentile(metric) = The percentile rank of the metric across all players <br />
+          Min-Max(metric) = The min-max normalized value of the metric across all players
+        </p>
+
       </section>
 
       {/* Sources section */}
