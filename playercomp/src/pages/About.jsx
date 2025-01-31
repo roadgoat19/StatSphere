@@ -21,6 +21,15 @@ const About = () => {
         </ol>
       </section>
 
+      {/* Who's in the database section*/}
+      <section className="about-section">
+        <h2>Who is included?</h2>
+        <p>
+          Player's who are included are those who accumulated <strong>5000 minutes played through the 2017 season.</strong> This limitation was imposed becauase
+          the dataset contains only data through this season, and including players with smaller sample sizes could skew the normalization and result in unfair comparisons.
+        </p>
+      </section>
+
       {/* Stat Definitions Section */}
       <section className="about-section">
         <h2>Understanding the Stats</h2>
@@ -33,6 +42,8 @@ const About = () => {
           <li><strong>2P (2P / MP):</strong> How frequently a player scores a 2P shot.</li>
           <li><strong>3P (3P / MP):</strong> How frequently a player scores a 3P shot.</li>
           <li><strong>TS% (True Shooting Percentage):</strong> A measure of scoring efficiency, taking all forms of scoring into account.</li>
+          <li><strong>AST% (Assist Percentage):</strong>The percentage of a teams assists a player made while on the floor, measuring playmaking volume.</li>
+          <li><strong>AST/TOV (Assist to Turnover Ratio):</strong>The ratio of a players assists to turnovers, measuring playmaking efficiency.</li>
           <li><strong>STL% (Steal Percentage):</strong> How often a defensive possession ends in a steal by the player.</li>
           <li><strong>BLK% (Block Percentage):</strong> How often opponent shot attempts are blocked by the player.</li>
           <li><strong>DBPM (Defensive Box Plus Minus):</strong> An all-encompassing metric measuring defensive impact.</li>
@@ -60,6 +71,19 @@ const About = () => {
         <p>
           By combining these techniques, the radar chart ensures that <strong>dominant players stand out</strong>, while players who are <strong>above average in a category</strong> are also recognized. This hybrid approach <strong>strikes a balance between fairness and differentiation</strong>, making player comparisons both intuitive and insightful.
         </p>
+      </section>
+
+      {/* Sources section */}
+      <section className="about-section">
+        <h2>Sources</h2>
+        <ul>
+          <li>
+            Data was sourced from:{" "}
+            <a href="https://www.kaggle.com/datasets/drgilermo/nba-players-stats" target="_blank" rel="noopener noreferrer">
+              NBA Players Stats since 1950
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   );
