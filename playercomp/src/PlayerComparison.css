@@ -26,6 +26,19 @@ body {
   margin-top: 80px; /* Ensures space below navbar */
 }
 
+.chart-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%; /* Ensures it doesn't exceed screen width */
+  max-width: 600px; /* Prevents it from getting too large */
+  height: auto; /* Adjusts height dynamically */
+  padding: 10px;
+  background-color: #1e1e1e;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  overflow: hidden; /* Prevents content from overflowing */
+}
+
 /* Navbar (Fixed at the top) */
 .navbar {
   display: flex;
@@ -150,6 +163,11 @@ h1 {
     max-width: 90%;
     padding: 15px;
     margin-top: 60px; /* Smaller space for mobile */
+  }
+
+  .chart-container {
+    max-width: 100%; /* Makes sure it fits smaller screens */
+    padding: 5px; /* Reduces padding to save space */
   }
 
   .navbar {
