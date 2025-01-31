@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import OpenAI from "openai";
 
 const PlayerComparisonBlurb = ({ player1Data, player2Data }) => {
   const [blurb, setBlurb] = useState(null);
