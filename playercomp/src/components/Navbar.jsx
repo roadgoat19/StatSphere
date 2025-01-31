@@ -1,16 +1,17 @@
 import React from "react";
 import { NavLink } from "react-router-dom";
-import "../Navbar.css"; // Import the CSS file for styling
 
 const Navbar = () => {
   return (
     <nav className="navbar">
-      <NavLink to="/" exact className="nav-link" activeClassName="active">
-        Player Comparison
-      </NavLink>
-      <NavLink to="/about" className="nav-link" activeClassName="active">
-        About
-      </NavLink>
+      <div className="nav-links">
+        <NavLink to="/" className="nav-link" activeclassname="active">
+          Player Comparison
+        </NavLink>
+        <NavLink to="/about" className="nav-link" activeclassname="active">
+          About
+        </NavLink>
+      </div>
     </nav>
   );
 };
